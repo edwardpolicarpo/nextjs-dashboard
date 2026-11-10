@@ -2,9 +2,8 @@ packages:
   - .
 allowBuilds:
   bcrypt: true
+  esbuild: true
   sharp: true
-  unrs-resolver: set this to true or false
+  unrs-resolver: true
 minimumReleaseAge: 2880
-onlyBuiltDependencies:
-  - bcrypt
-  - sharp
+virtualStoreDirMaxLength: 25
