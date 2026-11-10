@@ -55,3 +55,5 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: [validate, react-doctor]
     uses: ./.github/workflows/cd.yml
+    secrets:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

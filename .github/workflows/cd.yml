@@ -2,6 +2,13 @@ name: CD
 
 on:
   workflow_call:
+    secrets:
+      VERCEL_TOKEN:
+        required: true
+      VERCEL_ORG_ID:
+        required: false
+      VERCEL_PROJECT_ID:
+        required: false
 
 permissions:
   contents: read
